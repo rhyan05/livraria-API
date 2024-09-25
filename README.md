@@ -20,13 +20,26 @@ Essa e uma API segue os padrões do CRUD(Create, read, update, delete) nas susas
 
 ## Estrutura do Projeto
 ### `index.php`
-Aqui sera feito a criação e o redirecionamento da API, ele ira identificar qual a função voce quer atravez do `fn`, por exemplo se você digitar `fn=read` ele ira identficar que você quer a função read e ira redirecioanr para a pasta correta.
+Aqui sera feito a criação e o redirecionamento da API, ele ira identificar qual a função voce quer atravez do `fn`, por exemplo se você digitar `fn=read` ele ira identficar que você quer a função read, e depois ira ler o `type`, que ira redirecionar a pasta para realizar esta execução.
 Esse redirecioanemtno de pasta ocorre atravez da função `type`, se estiver escrito `type=autor`, ele sabe que você quer realizar uma ação no arquivo autor.
 
+Temos 4 `fn` diferentes, sendo eles
+- `fn=create` -> que tem a função de criar um novo intem
+- `fn=update` -> tem a função de atualizar um item que já criado
+- `fn=read` -> ele ira mostrar todos os itens que ja foram criados
+- `fn=delete` -> ele ira deleter um item
+
+Tambem temos 5 `type` diferentes
+- `type=editora` -> Ele acessa a pasta *Editora.php*
+- `type=autor` -> Ele acessa a pasta *Autor.php*
+- `type=livro` -> Ele acessa a pasta *Livro.php*
+- `type=estoque` -> Ele acessa a pasta *Estoque.php*.
+- `type=livraria` -> Ele acessa a pasta *Livraria.php*
+  
 ### `tabelas/`
 Aqui esta a execução da função da sua decisão do index, enquanto o index decide o que voce pede, o arquivo era ser executado.
-Dentro dessa pasta temos 4 arquivos: *Autor.php*, *Editora.php*, *Livraria.php*, *Livro.php*
-
+Dentro dessa arquivos temos 5 arquivos: *Autor.php*, *Editora.php*, *Livraria.php*, *Livro.php*, *Estoque.php*.
+Essas são os arquivos que o `type` ira acessar para realizar as ações.
 
 
 # Aplicações 
