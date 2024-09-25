@@ -52,11 +52,9 @@ http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=a
 ### Autor 2
 http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=autor&name=George R.R. Martin
 
+
 ### Criar Editora
 http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=editora&name=Editora Fantástica&status=Ativo
-
-### Criar Livraria
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=livraria&name=Livraria Mágica&id_estoque=1&id_livro=1
 
 ### Criar Livros
 #### Livro 1
@@ -66,13 +64,19 @@ http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=l
 http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=livro&name=As Crônicas de Gelo e Fogo&id_editora=1&id_autor=2&data_lancamento=1996-08-06&status=Disponível
 
 #### ler o livro especifico
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=read&type=livro&id=13
+http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=read&type=livro&id=1
 
 ### Ler os livros 
 http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=read&type=livro
 
 ### Deletar livro 2
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=delete&type=livro&id=12
+http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=delete&type=livro&id=2
 
 ### Ler os livros 
 http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=read&type=livro
+
+### Estoque
+http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=estoque&status=disponível&id_livro=1
+
+### Criar Livraria
+http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=livraria&name=Livraria Mágica&id_estoque=1&id_livro=1
