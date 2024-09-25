@@ -98,7 +98,7 @@ switch ($type) {
         $estoque->setStatus($status);
         $estoque->setLivro($id_livro);
         
-        if ($fn === "create" && $status !== null) {
+        if ($fn === "create" && $status !== null && $id_livro !== null) {
             $data["estoque"] = $estoque->create();
         } elseif ($fn === "read") {
             if ($id_estoque > 0) {

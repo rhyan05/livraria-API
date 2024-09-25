@@ -1,3 +1,4 @@
+-- Database: livraria_bd_api
 -- Tabela de Editora
 CREATE TABLE Editora (
     id_editora INT AUTO_INCREMENT PRIMARY KEY,
