@@ -3,17 +3,17 @@ class Autor {
     private $id;
     private $nome;
 
-    // Setter para ID
+    
     public function setID($id) {
         $this->id = $id;
     }
 
-    // Setter para Nome
+    
     public function setNome($nome) {
         $this->nome = $nome;
     }
 
-    // Método para criar um novo autor
+    // criar novo autor
     public function create() {
         include 'db.php'; 
 
@@ -28,7 +28,7 @@ class Autor {
         }
     }
 
-    // Método para ler um autor pelo ID
+    // ler autor
     public function readByID() {
         include 'db.php'; 
 
@@ -40,9 +40,9 @@ class Autor {
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         
         if ($result) {
-            return $result; // Retorna o autor encontrado
+            return $result; // retorna o autor encontrado
         } else {
-            return ["error" => "Autor não encontrado."]; // Retorna mensagem de erro
+            return ["error" => "Autor não encontrado."]; // retorna mensagem de erro
         }
     }
 
@@ -56,7 +56,7 @@ class Autor {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    // Método para atualizar um autor existente
+    // atualizar autor
     public function update() {
         include 'db.php';
 
@@ -72,7 +72,7 @@ class Autor {
         }
     }
 
-    // Método para deletar um autor
+    // deletar
     public function delete() {
         include 'db.php'; 
 
