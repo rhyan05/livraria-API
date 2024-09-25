@@ -31,9 +31,9 @@ switch ($type) {
             $data["editora"] = $editora->create();
         } elseif ($fn === "read") {
             if ($id > 0) {
-                $data["editora"] = $editora->readByID(); // Lê editora pelo ID
+                $data["editora"] = $editora->readByID(); 
             } else {
-                $data["editora"] = $editora->read(); // Lê todas as editoras
+                $data["editora"] = $editora->read(); 
             }
         } elseif ($fn === "update" && $id > 0 && $name !== null) {
             $data["editora"] = $editora->update();
@@ -53,9 +53,9 @@ switch ($type) {
             $data["autor"] = $autor->create();
         } elseif ($fn === "read") {
             if ($id > 0) {
-                $data["autor"] = $autor->readByID(); // Lê autor pelo ID
+                $data["autor"] = $autor->readByID(); 
             } else {
-                $data["autor"] = $autor->read(); // Lê todos os autores
+                $data["autor"] = $autor->read(); 
             }
         } elseif ($fn === "update" && $id > 0 && $name !== null) {
             $data["autor"] = $autor->update();
@@ -79,9 +79,9 @@ switch ($type) {
             $data["livro"] = $livro->create();
         } elseif ($fn === "read") {
             if ($id_livro > 0) {
-                $data["livro"] = $livro->readByID(); // Lê livro pelo ID
+                $data["livro"] = $livro->readByID(); 
             } else {
-                $data["livro"] = $livro->read(); // Lê todos os livros
+                $data["livro"] = $livro->read(); 
             }
         } elseif ($fn === "update" && $id_livro > 0 && $name !== null) {
             $data["livro"] = $livro->update();
@@ -102,9 +102,9 @@ switch ($type) {
             $data["estoque"] = $estoque->create();
         } elseif ($fn === "read") {
             if ($id_estoque > 0) {
-                $data["estoque"] = $estoque->readByID(); // Lê estoque pelo ID
+                $data["estoque"] = $estoque->readByID(); 
             } else {
-                $data["estoque"] = $estoque->read(); // Lê todos os estoques
+                $data["estoque"] = $estoque->read(); 
             }
         } elseif ($fn === "update" && $id_estoque > 0) {
             $data["estoque"] = $estoque->update();
@@ -126,9 +126,9 @@ switch ($type) {
             $data["livraria"] = $livraria->create();
         } elseif ($fn === "read") {
             if ($id > 0) {
-                $data["livraria"] = $livraria->readByID(); // Lê livraria pelo ID
+                $data["livraria"] = $livraria->readByID(); 
             } else {
-                $data["livraria"] = $livraria->read(); // Lê todas as livrarias
+                $data["livraria"] = $livraria->read(); 
             }
         } elseif ($fn === "update" && $id > 0) {
             $data["livraria"] = $livraria->update();
