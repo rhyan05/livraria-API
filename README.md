@@ -93,3 +93,11 @@ http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=e
 
 ### Criar Livraria
 http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=livraria&name=Livraria Mágica&id_estoque=1&id_livro=1
+
+
+# Link de acesso 
+Slides:
+https://www.canva.com/design/DAGRtf9JT3M/NJx45SAknFOswnB3MWMcVQ/edit?utm_content=DAGRtf9JT3M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+YouTube:
+https://youtu.be/TnMbGA3Gl6c?si=sHmIrvK9hRGIrhMv
