@@ -42,60 +42,59 @@ Dentro dessa arquivos temos 5 arquivos: *Autor.php*, *Editora.php*, *Livraria.ph
 Essas são os arquivos que o `type` ira acessar para realizar as ações.
 
 
-# Aplicações 
+# Exemplo de uma Aplicação
 Uma API trabalha com URLs, então segue abaixo um exemplo da aplicação
-Obs: Atualize seu caminho, `http://localhost/Projetos/API/apis-php/API_crud_projeto/`, esse e o meu caminho, o seu pode sera diferente, então tome cuidado.
-Para saber seu caminho e so ver aonde o arquivo foi guardado em seu computador.
+Obs: Para a utilização do proeto, e preciso saber o caminho em que você salvou o arquivo, para isso basta ir na sua pasta de documentos e seguir as indicações
+
 
 ### Criar uma Editora:
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=editora&name=Kilp&status=ativo
+api.php?fn=create&type=editora&name=Kilp&status=ativo
 
 ### Ler todas as Editoras:
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=read&type=editora
+api.php?fn=read&type=editora
 
 ### Atualizar uma Editora:
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=update&type=editora&id=1&name=Kilp Atualizada&status=ativo
+api.php?fn=update&type=editora&id=1&name=Kilp Atualizada&status=ativo
 
 ### Deletar uma Editora:
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=delete&type=editora&id=1
+api.php?fn=delete&type=editora&id=1
 
 ### Autor 1
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=autor&name=J.K. Rowling
+api.php?fn=create&type=autor&name=J.K. Rowling
 
 ### Autor 2
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=autor&name=George R.R. Martin
-
+api.php?fn=create&type=autor&name=George R.R. Martin
 
 ### Criar Editora
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=editora&name=Editora Fantástica&status=Ativo
+api.php?fn=create&type=editora&name=Editora Fantástica&status=Ativo
 
 ### Criar Livros
 #### Livro 1
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=livro&name=Harry Potter e a Pedra Filosofal&id_editora=1&id_autor=1&data_lancamento=1997-06-26&status=Disponível
+api.php?fn=create&type=livro&name=Harry Potter e a Pedra Filosofal&id_editora=1&id_autor=1&data_lancamento=1997-06-26&status=Disponível
 
 #### Livro 2
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=livro&name=As Crônicas de Gelo e Fogo&id_editora=1&id_autor=2&data_lancamento=1996-08-06&status=Disponível
+api.php?fn=create&type=livro&name=As Crônicas de Gelo e Fogo&id_editora=1&id_autor=2&data_lancamento=1996-08-06&status=Disponível
 
 #### ler o livro especifico
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=read&type=livro&id=1
+api.php?fn=read&type=livro&id=1
 
 ### Ler os livros 
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=read&type=livro
+api.php?fn=read&type=livro
 
 ### Deletar livro 2
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=delete&type=livro&id=2
+api.php?fn=delete&type=livro&id=2
 
 ### Ler os livros 
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=read&type=livro
+api.php?fn=read&type=livro
 
 ### Estoque
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=estoque&status=disponível&id_livro=1
+api.php?fn=create&type=estoque&status=disponível&id_livro=1
 
 ### Criar Livraria
-http://localhost/Projetos/API/apis-php/API_crud_projeto/api.php?fn=create&type=livraria&name=Livraria Mágica&id_estoque=1&id_livro=1
+api.php?fn=create&type=livraria&name=Livraria Mágica&id_estoque=1&id_livro=1
 
 
-# Link de acesso 
+# Link de acesso a apresentação do projeto e slides
 Slides:
 https://www.canva.com/design/DAGRtf9JT3M/NJx45SAknFOswnB3MWMcVQ/edit?utm_content=DAGRtf9JT3M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
